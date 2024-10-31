@@ -40,11 +40,14 @@
     <main>
         <section class="principalIndex">
 
-            <h1><div>Molax Argentina</div>
+            <h1><div>MOLAX Argentina</div>
                 <span class="h1Subtitulo">Calidad y Excelencia en el cuidado de tu auto</span> </h1>
             <div class="contenedorTextoPrincipalIndex">
                 <p>
-                    Somos especialistas en productos de Calidad Profesional para el cuidado de tu auto
+                    Somos especialistas en productos de
+                </p>
+                <p>   
+                    Calidad Profesional para el cuidado de tu auto
                 </p>
             <a href="./pages/productos.html">Conocé nuestros Productos</a>
             </div>
@@ -52,8 +55,10 @@
         </section>
         <!--Imágenes de Productos destacados-->
         <section class="productosDestacados">
-            <h2>Productos Destacados</h2>
-
+            <div class="tituloProductosRecientes">
+                <h2>Productos Recientes</h2>
+            </div>
+            <div class="listadoProductosRecientes">
             <div>
                 <img src="./assets/img/cera_brillo_600x906.jpg" alt="Cera abrillantadora">
                 <h3>Cera Abrillantadora</h3>
@@ -69,65 +74,77 @@
                 <h3>Silicona para exterior</h3>
                 <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
+        </div>
 
         </section>
 
-        <section id="nosotros">
-            <div class="principalIndexNosotros">
-            <h2>Nosotros</h2>
-             
-                <div class="principalIndexTextoNosotros">
-                   <p> Con muchos años de experiencia, nos acercan una completísima gama de productos para el cuidado total, Shampo, Limpia motores, Quita insectos, Limpia y lava parabrisas, Limpia llantas. Ceras, Revividores de cubiertas partes interiores y tapizados, Antiempañantes, Pasta limpiamanos, Refrigerantes, Desengrasantes y muchos más</p>
-                   <a href="./pages/contacto.html">CONTACTANOS</a>
-                </div>
+        <section id="nosotros" class="nosotros">
+            <div class="nosotrosTexto">
+                 <div><h2>Nosotros</h2></div>
+                 <div><p> Con muchos años de experiencia, nos acercan una completísima gama de productos para el cuidado total, Shampo, Limpia motores, Quita insectos, Limpia y lava parabrisas, Limpia llantas. Ceras, Revividores de cubiertas partes interiores y tapizados, Antiempañantes, Pasta limpiamanos, Refrigerantes, Desengrasantes y muchos más</p></div>
+                 <div><a href="./pages/contacto.html">CONTACTANOS</a></div>
             </div>
+            <div class="nosotrosImagen">
+                <img src="./assets/img/fondo_nosotros.jpg" alt="imagen para completar">
+            </div>
+
+
+             <!--  
+                <div class="principalIndexTextoNosotros">
+                   
+
+                </div> -->
            
         </section>
         
     </main>
 
     <footer class="footer">
-        <div><a href="#">
+        <div class="logoFooter"><a href="#">
                 <img class="logo" src="./assets/img/logo_blanco_518x128.png" alt="Logo de la tienda de artículos de Detailing">
             </a>
         </div>
-        <div>
+        <div class="navegacionFooter">
             <nav>
                 <ul>
                     <li><a href="">Inicio</a></li>
                     <li><a href="">Productos</a></li>
                     <li><a href="">Contacto</a></li>
+                    <li><a href="">Sobre Nosotros</a></li>
                 </ul>
              </nav>
-        <div>
+        </div>           
+        <div class="navegacionDosFooter">
              <nav>
                 <ul>
-                    <li><a href="">Sobre Nosotros</a></li>
                     <li><a href="">Política de Privacidad</a></li>
                     <li><a href="">Términos y Condiciones</a></li>
                 </ul>
             </nav>
         </div>
         <!--Datos de redes sociales-->
-        <nav>
-            <ul>
-                <li><a href="https://www.facebook.com/people/MOLAX-Argentina/100063622626240/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                
-                <li><a href="https://www.instagram.com/molaxargentina/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-        </nav>
-        <div>
+        <div class="redesSocialesFooter">
+            <nav>
+                <ul>
+                    <li><a href="https://www.facebook.com/people/MOLAX-Argentina/100063622626240/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/molaxargentina/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+        </div>        
+        <div class="ubicacionFooter">
         <!--Datos de ubicacion del local y dirección de email-->
-        <address>
-            <p>Dirección: Loureiro 4456, CP 1415, Ciudadela</p>
-            <p>Buenos Aires - Argentina</p>
-            <p>E-Mail: info@molax.com.ar</p>
-        </address>
+            <address>
+                <p>Dirección: Loureiro 4456, CP 1415, Ciudadela</p>
+                <p>Buenos Aires - Argentina</p>
+                <p>E-Mail: info@molax.com.ar</p>
+                <p>2024 Molax Argentina | Todos los derechos reservados</p>
+            </address>
+        </div>  
         <!--Logo de Whatsapp anclado a la parte inferior con el link para que se abra la aplicacion para contacto por Whatsapp-->
         <div>
             <a href="https://api.whatsapp.com/send/?phone=5491159554522&text&type=phone_number&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
-        <p>2024 Molax Argentina | Todos los derechos reservados</p>
+        
     </footer>
 </body>
 </html>
