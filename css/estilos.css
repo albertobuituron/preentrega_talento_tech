@@ -122,74 +122,25 @@ h2{
     gap: 50px;
     
     .listadoProductosRecientes{
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    gap: 50px;
-    img{
-       width: 300px;
-    }
-    h2{
-        color:rgb(255, 255, 255)
-    }   
-}
-margin-bottom: 50px;
-}
-
-/*
-.principalIndexNosotros{
-    background-image: url("../assets/img/fondo_nosotros.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:center center;
-    height: 50vh;
-    text-align: center;
-    
-
-    
-    .PrincipalIndexTextoNosotros{
-        margin:0 auto;
-        margin-top: 200px;
-        border:2px solid  #ffe3e9;
-        padding:10px;
-        border-radius: 5px;
+        display: flex;
+        justify-content: space-evenly;
         text-align: center;
-        width: 50%;
-        font-size: 15px;
-        color: rgb(255, 255, 255);
-        propiedades blur y backdrop-blur
-        filter: blur(10px) brightness(0.5);
-        backdrop-filter: blur(15px);
-        
-        a{
-            display:inline-block;
-            text-decoration: none;
-                      
-            color: #ffffff;
-            font-size: 1em;
-            border:2px solid #ffffff;
-            padding:20px;
-            border-radius:5px;
-            box-shadow: -10px 0px 35px 12px rgba(0,0,0,0.66);
+        gap: 50px;
+        img{
+            width: 300px;
         }
-     
-        p{
-            font-size: 2em;
-            display:inline-block;
-            margin-top:20px;
-            text-decoration: none;
-            color: rgb(255, 255, 255);
+        h2{
+            color:rgb(255, 255, 255)
+          }   
+        a{
+            color:white;
             font-size: 1.5em;
-            border:2px solid rgb(255, 255, 255);
-            padding:8px;
-            border-radius:5px;
-            box-shadow: -10px 0px 35px 12px rgba(0,0,0,0.66);
-
+        
         }
     }
-   
+
 }
-*/
+
 
 .nosotros{
     h2{color: rgb(255, 255, 255);}
@@ -200,43 +151,40 @@ margin-bottom: 50px;
     margin-bottom: 50px;
     padding: 50px;
     gap: 50px;
-
     
-
     .nosotrosTexto{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border:2px solid  #ffe3e9;
-    padding:20px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 15px;
-    color: #ffffff;
-    backdrop-filter: blur(15px);
-      
-    p{
-        font-size: 1.5em;
-        padding-bottom: 20px;
-    }
-    a{
-        display:inline-block;
-        text-decoration: none;
-
-        color: #ffffff;
-        font-size: 1em;
-        border:2px solid #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 70vh;
+        border:2px solid  #ffe3e9;
         padding:20px;
-        border-radius:5px;
-        box-shadow: -10px 0px 35px 12px rgba(0,0,0,0.66);
-    }
+        border-radius: 5px;
+        text-align: center;
+        font-size: 15px;
+        color: #ffffff;
+        backdrop-filter: blur(15px);
+        
+        p{
+            font-size: 1.5em;
+            padding-bottom: 20px;
+        }
+        a{
+            display:inline-block;
+            text-decoration: none;
+
+            color: #ffffff;
+            font-size: 1em;
+            border:2px solid #ffffff;
+            padding:20px;
+            border-radius:5px;
+            box-shadow: -10px 0px 35px 12px rgba(0,0,0,0.66);
+        }
     }
     .nosotrosImagen{
-    img{
-        width: 100%;
-        
-
-    }
+         img{
+             width: 70vh;
+            }
     }    
 
 }
@@ -281,22 +229,30 @@ margin-bottom: 50px;
 }
 
 
+/*Pagína Articulos*/
+
 .principalArticulos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
     background-image: url("../assets/img/fondo_articulos.png");
-    background-size:cover;
+    background-color: rgb(72, 72, 72);
+    background-size:contain;
     background-repeat: no-repeat;
     background-position:center center;
     height: 100vh;
     text-align: center;
     h1{
-        margin: 0 auto;
-        color: black;
-   
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /*margin: 0 auto;*/
+        color: white;
     }
     
     .contenedorTextoPrincipalArticulos{
         margin:0 auto;
-        margin-top: 30px;
+        margin-top: 80px;
         border:3px solid  #000000;
         padding:10px;
         border-radius: 5px;
@@ -304,8 +260,6 @@ margin-bottom: 50px;
         width: 50%;
         font-size: 15px;
         color: rgb(0, 0, 0);
-        /*propiedades blur y backdrop-blur*/
-       /* filter: blur(10px) brightness(0.5);*/
         backdrop-filter: blur(15px);
      
      
@@ -326,9 +280,69 @@ margin-bottom: 50px;
         }
     }
 
+
 }
-.mainContacto{
+
+
+    
+
+.articulos1{
+        width: 90%;
+        margin:0 auto;
+        height: 60vh;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+/*        border:0.5px solid gray;*/
+        img{
+            width: 0px;
+            height:100%;
+            flex-grow: 1;
+            object-fit:contain;
+            opacity: 0.8;
+            transition: .5s ease;
+        }
+        img:hover{
+            width: 30%;
+            opacity: 1;
+            filter:contrast(120%);
+            
+        }
+}
+
+.articulos2{
+    width: 90%;
+    margin:0 auto;
+    height: 60vh;
+    background-color: #000;
     display: flex;
+    justify-content: center;
+    align-items: center;
+/*        border:0.5px solid gray;*/
+    img{
+        width: 0px;
+        height:100%;
+        flex-grow: 1;
+        object-fit: contain;
+        opacity: 0.8;
+        transition: .5s ease;
+    }
+    img:hover{
+        width: 30%;
+        opacity: 1;
+        filter:contrast(120%);
+        
+    }
+}
+
+
+
+
+/*Página Contacto*/
+
+.mainContacto{
+        display: flex;
     justify-content: space-evenly;
     background-color: gray;
 }
