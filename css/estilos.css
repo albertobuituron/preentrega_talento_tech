@@ -29,6 +29,19 @@ h2{
     text-shadow: black 0.1em 0.1em 0.2em ;
 }
 
+h3{
+font-size: 1.5rem;
+color: #ffffff;   
+text-shadow: black 0.1em 0.1em 0.2em ;
+
+}
+
+h4{
+    font-size: 1.5rem;
+    color: #ffffff;   
+    text-shadow: black 0.1em 0.1em 0.2em ;
+}
+
 /*Header*/
 .header{
     display: flex;
@@ -59,6 +72,9 @@ h2{
                     font-size: 1.5rem;
                 
                 }
+                a:hover{
+                    color:  #c3bfbf;
+                }
             }
         
         }
@@ -68,7 +84,7 @@ h2{
 /*Estilos que aplican a la seccion principal del index*/
 .principalIndex{
     display: flex;
-    flex-direction: column;
+  /*  flex-direction: column;*/
     justify-content: space-evenly;
     align-items:center;
     background-image: url("../assets/img/fondo_oscuro.jpg");
@@ -109,6 +125,13 @@ h2{
    
 }
 
+@media screen and(max-width: 768px){
+    .principalIndex{
+        display: block;
+
+}
+}
+
 
 /*productos Destacados*/
 .productosDestacados{
@@ -120,23 +143,32 @@ h2{
     align-items: center;
     margin-bottom: 50px;
     gap: 50px;
+    padding: 50px;
     
     .listadoProductosRecientes{
+        width: 100%;
+        margin:0 auto;
+        height: 60vh;
+        background-color: #000;
         display: flex;
-        justify-content: space-evenly;
-        text-align: center;
-        gap: 50px;
+        justify-content: center;
+        align-items: center;
+
         img{
-            width: 300px;
+            width: 0px;
+            height:100%;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: 0.8;
+            transition: .5s ease;
         }
-        h2{
-            color:rgb(255, 255, 255)
-          }   
-        a{
-            color:white;
-            font-size: 1.5em;
+        img:hover{
+            width: 8%;
+            opacity: 1;
+            filter:contrast(120%);
+            
+        }
         
-        }
     }
 
 }
@@ -225,6 +257,10 @@ h2{
         font-size: 1.5em;
         color: white;
     }
+    a:hover{
+        color:  #c3bfbf;
+    }
+
 
 }
 
@@ -234,7 +270,7 @@ h2{
 .principalArticulos{
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
+    padding: 10px;
     background-image: url("../assets/img/fondo_articulos.png");
     background-color: rgb(72, 72, 72);
     background-size:contain;
@@ -256,93 +292,93 @@ h2{
         border:3px solid  #000000;
         padding:10px;
         border-radius: 5px;
-        text-align: center;
+        text-align: justify;
         width: 50%;
-        font-size: 15px;
+        font-size: 10px;
         color: rgb(0, 0, 0);
         backdrop-filter: blur(15px);
-     
-     
+          
         p{
-            font-size: 1.6em;
+            font-size: 2em;
         }
-        a{
-            display:inline-block;
-            margin-top:20px;
-            text-decoration: none;
-            color: rgb(28, 27, 27);
-            font-size: 2.5em;
-            border:2px solid black;
-            padding:8px;
-            border-radius:5px;
-            box-shadow: -10px 0px 35px 12px rgba(0,0,0,0.66);
-
-        }
+/
     }
-
-
 }
 
-
-    
-
-.articulos1{
-        width: 90%;
-        margin:0 auto;
-        height: 60vh;
-        background-color: #000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-/*        border:0.5px solid gray;*/
-        img{
-            width: 0px;
-            height:100%;
-            flex-grow: 1;
-            object-fit:contain;
-            opacity: 0.8;
-            transition: .5s ease;
-        }
-        img:hover{
-            width: 30%;
-            opacity: 1;
-            filter:contrast(120%);
-            
-        }
-}
-
-.articulos2{
-    width: 90%;
+.galeriaArticulos {
+   
+    padding:20px;
     margin:0 auto;
-    height: 60vh;
-    background-color: #000;
-    display: flex;
+    width: 90%;
+    display:flex;
     justify-content: center;
-    align-items: center;
-/*        border:0.5px solid gray;*/
-    img{
-        width: 0px;
-        height:100%;
-        flex-grow: 1;
-        object-fit: contain;
-        opacity: 0.8;
-        transition: .5s ease;
-    }
-    img:hover{
-        width: 30%;
-        opacity: 1;
-        filter:contrast(120%);
-        
-    }
-}
+    flex-wrap: wrap;
+    gap: 40px;
+       
+        .tarjetasArticulos{
+            
+            width: 400px;
+            height: 600px;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 4px 4px 4px 4px rgba(255, 255, 255, 0.361); 
+  
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            img{
+                object-fit: cover;
+                border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    width: 80%;
+                    height: 80%;
+
+             }
+             h4{
+                color: white;
+                font-size: 1.2em;
+             }
+             p{
+                color: white;
+             }
+             a{
+                color: white;
+                font-size: 1.5em;
+             }
+            a:hover{
+                color: bisque;
+                font-size: 1.7em;
+            }
 
 
+
+        }
+    }
+
+.textoProductos{padding-left:20px;
+padding-right:20px;
+margin-bottom: 40px;}   
+    
 
 
 /*Página Contacto*/
 
-.mainContacto{
-        display: flex;
-    justify-content: space-evenly;
+.principalContacto{
     background-color: gray;
+
 }
+.formularioContactoYMapa{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        padding: 20px;
+        label{
+            font-size: 1.2em;
+         }
+
+}
+
+
