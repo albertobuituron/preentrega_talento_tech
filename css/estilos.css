@@ -1,4 +1,4 @@
-/*import de google fonts*/
+/*importar fuente de google fonts*/
 * {
     font-family: "Noto Sans", sans-serif;
     margin:0;
@@ -16,11 +16,6 @@ h1{
     text-shadow: black 0.1em 0.1em 0.2em ;
 }
 
-.h1Subtitulo{
-    font-size: 2rem;
-     color: #ffffff;   
-    text-shadow: black 0.1em 0.1em 0.2em ;
-}
 
 h2{
     color: #ffffff;
@@ -42,12 +37,14 @@ h4{
     text-shadow: black 0.1em 0.1em 0.2em ;
 }
 
-/*Header*/
+/*Seccion Body del Index.html*/
+
+/*Header del Index.html donde se aplican estilos para el logo y el menu de navegarion principal*/
 .header{
     display: flex;
     justify-content:space-between;
     align-items:center;
-    padding: 0 50px 0 50px;
+    padding: 0 20px 0 20px;
     height: 10vh;
     background-color: rgb(0, 0, 0);
     font-size: 1 rem;
@@ -64,7 +61,7 @@ h4{
             list-style: none;
             display: flex;
             flex-direction: row;
-            gap: 30px;
+            gap: 20px;
             li{
                 a{
                     text-decoration: none;
@@ -81,10 +78,11 @@ h4{
     }
 }
 
-/*Estilos que aplican a la seccion principal del index*/
+/*Seccion Main del Index.html*/
+/*Seccion Principal del Index.html*/
+
 .principalIndex{
     display: flex;
-  /*  flex-direction: column;*/
     justify-content: space-evenly;
     align-items:center;
     background-image: url("../assets/img/fondo_oscuro.jpg");
@@ -93,15 +91,22 @@ h4{
     background-position:center center;
     text-align: justify;
     gap: 50px;
-    height: 90vh;
+    height: 100vh;
+    padding: 10px;
+
+    .textoPrincipal{
+        .h1Subtitulo{
+            font-size: 2rem;
+            color: #ffffff;   
+            text-shadow: black 0.1em 0.1em 0.2em ;
+        }
+    }
 
     .contenedorTextoPrincipalIndex{
-        
         border:2px solid  #ffe3e9;
         padding:20px;
         border-radius: 5px;
         text-align: center;
-        width: 40%;
         font-size: 15px;
         color: #ffffff;
         backdrop-filter: blur(15px);
@@ -109,6 +114,7 @@ h4{
         p{
             font-size: 1.5em;
             padding-bottom: 20px;
+            text-shadow: black 0.1em 0.1em 0.2em ;
         }
         a{
             display:inline-block;
@@ -119,21 +125,75 @@ h4{
             padding:20px;
             border-radius:5px;
             box-shadow: -10px 0px 35px 12px rgba(0,0,0,0.66);
-
+        }
+        a:hover{
+            color: #c3bfbf;
         }
     }
    
 }
 
-@media screen and(max-width: 768px){
-    .principalIndex{
-        display: block;
+/*Media Querie para Seccion Main Principal del Index.html pantallas inferiores a 768px*/
+@media (max-width: 768px) {
+    .header{
+        .logo{
+            width: 100px;
+        }
+        display: flex;
+        justify-content: space-evenly;
+        height: auto;
+        padding: 10px;
+        nav{
+            ul{
+                display: flex;            
+                flex-direction: column;
+                align-items: center;
 
+                li{
+                    a{
+                        text-decoration: none;
+                        color:  #ffffff;
+                        font-size: 1rem;
+                    
+                    }
+                    a:hover{
+                        color:  #c3bfbf;
+                    }
+                }
+            
+            }
+        }   
+    }
+        .principalIndex {
+            flex-direction: column;
+            gap: 20px; 
+            padding: 20px;
+            height: auto; 
+        }
+
+        .textoPrincipal .h1Subtitulo {
+            font-size: 1.2rem; 
+            text-align: center;
+        }
+
+        .contenedorTextoPrincipalIndex {
+            width: 90%; 
+            padding: 15px; 
+            font-size: 1em; 
+        }
+
+        .contenedorTextoPrincipalIndex p {
+            font-size: 1.2em; 
+        }
+
+        .contenedorTextoPrincipalIndex a {
+            font-size: 0.9em; 
+            padding: 15px; 
+    }
 }
-}
 
 
-/*productos Destacados*/
+/*Seccion productos Destacados del Index.html*/
 .productosDestacados{
     background-color: gray;
     margin-top: 15px;
@@ -166,60 +226,104 @@ h4{
             width: 8%;
             opacity: 1;
             filter:contrast(120%);
-            
         }
-        
     }
-
-}
-
-
-.nosotros{
-    h2{color: rgb(255, 255, 255);}
-    background-color: black;
-    display: flex;
-    justify-content: space-evenly;
-    height: 60vh;
-    margin-bottom: 50px;
-    padding: 50px;
-    gap: 50px;
-    
-    .nosotrosTexto{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 70vh;
-        border:2px solid  #ffe3e9;
-        padding:20px;
-        border-radius: 5px;
-        text-align: center;
-        font-size: 15px;
+    a{
+        display:inline-block;
+        text-decoration: none;
         color: #ffffff;
-        backdrop-filter: blur(15px);
-        
-        p{
-            font-size: 1.5em;
-            padding-bottom: 20px;
-        }
-        a{
-            display:inline-block;
-            text-decoration: none;
+        font-size: 1em;
+        border:2px solid #ffffff;
+        padding:20px;
+        border-radius:5px;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.378);
+    }
+    a:hover{
+        color:#c3bfbf;
+    }
+}
 
+
+/*Seccion Nosotros del Index.html*/
+.nosotros{
+    text-align: center;
+    padding:20px;
+      height: auto;
+      width: 100%;
+    .contenedorNosotros{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60vh;
+        width: 100%;
+        gap: 50px;
+        .nosotrosTexto{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 90%;
+            border:2px solid  #ffe3e9;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 15px;
             color: #ffffff;
-            font-size: 1em;
-            border:2px solid #ffffff;
-            padding:20px;
-            border-radius:5px;
-            box-shadow: -10px 0px 35px 12px rgba(0,0,0,0.66);
+            backdrop-filter: blur(15px);
+            padding: 20px;
+            gap: 20px;
+            
+            p{
+                font-size: 1.5em;
+                line-height: 150%;
+                padding-bottom: 10px;
+            }
+            a{
+                display:inline-block;
+                text-decoration: none;
+
+                color: #ffffff;
+                font-size: 1em;
+                border:2px solid #ffffff;
+                padding:10px;
+                border-radius:5px;
+                box-shadow: -10px 0px 35px 12px rgba(0,0,0,0.66);
+            }
+            a:hover{
+                color:  #c3bfbf;
+            }
+        }
+        .nosotrosImagen{
+            background-image: url("../assets/img/fondo_nosotros.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position:center;
+            width: 60%;
+            height: 100%;
         }
     }
-    .nosotrosImagen{
-         img{
-             width: 70vh;
-            }
-    }    
-
 }
+
+/*Media Querie para Seccion Nosotros del Index.html pantallas inferiores a 768px*/
+@media (max-width: 768px) {
+    .nosotros{
+        .contenedorNosotros{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            .nosotrosTexto{
+                p{
+                    font-size: 1em;
+                    line-height: 150%;
+                    padding-bottom: 10px;
+            }
+                
+            }
+        }
+    }
+}
+
+
+
 
 /*footer*/
 
@@ -260,10 +364,37 @@ h4{
     a:hover{
         color:  #c3bfbf;
     }
-
-
 }
 
+@media (max-width: 768px) {
+    .footer{
+        display: flex;
+        padding-top:50px;
+gap: 20px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        .logo{
+            width: 100px;
+                }
+            
+            ul{
+                list-style: none;
+                
+                a{
+                    font-size: 1.5em;
+                }
+                
+                .fa-instagram, .fa-facebook{
+                    font-size: 2em;
+                }
+
+    }  
+    p{
+        font-size: 1.2em;
+   } 
+    }
+}
 
 /*Pagína Articulos*/
 
