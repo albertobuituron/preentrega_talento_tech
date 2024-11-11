@@ -400,44 +400,53 @@ gap: 20px;
 
 .principalArticulos{
     display: flex;
-    flex-direction: column;
-    padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+    gap:40px;
     background-image: url("../assets/img/fondo_articulos.png");
     background-color: rgb(72, 72, 72);
-    background-size:contain;
+    background-size:cover;
     background-repeat: no-repeat;
-    background-position:center center;
-    height: 100vh;
-    text-align: center;
-    h1{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        /*margin: 0 auto;*/
-        color: white;
-    }
+    background-position:center;
+    height: auto;
+    text-align: left;
+    .principalArticulosTitulo{
     
+        .h1Subtitulo{
+            font-size: 2rem;
+            color: #ffffff;   
+            text-shadow: black 0.1em 0.1em 0.2em ;
+    }
+    }
     .contenedorTextoPrincipalArticulos{
-        margin:0 auto;
-        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border:3px solid  #000000;
         padding:10px;
         border-radius: 5px;
         text-align: justify;
         width: 50%;
-        font-size: 10px;
-        color: rgb(0, 0, 0);
+        height: auto;
+        font-size: 1em;
+        color: #ffffff;   
+        text-shadow: black 0.1em 0.1em 0.2em ;
         backdrop-filter: blur(15px);
+        
           
         p{
-            font-size: 2em;
+            font-size: 1.5em;
         }
-/
+
     }
 }
 
+.tituloArticulos {
+    padding: 50px;
+    text-align: center;
+}
 .galeriaArticulos {
-   
     padding:20px;
     margin:0 auto;
     width: 90%;
@@ -491,6 +500,37 @@ gap: 20px;
 padding-right:20px;
 margin-bottom: 40px;}   
     
+
+@media (max-width: 768px) {
+    .principalArticulos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        .contenedorTextoPrincipalArticulos{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            font-size: 1em;
+    
+    }
+    .galeriaArticulos{
+        .tarjetasArticulos{
+            width: 200px;
+            height: 400px;
+        }
+        img{
+            width: 60%;
+            height: 60%;
+        }
+    }
+
+}
+
+
+}
+
 
 
 /*Página Contacto*/
