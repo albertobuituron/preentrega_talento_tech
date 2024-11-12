@@ -127,7 +127,8 @@ h4{
             box-shadow: -10px 0px 35px 12px rgba(0,0,0,0.66);
         }
         a:hover{
-            color: #c3bfbf;
+            background-color: #c3bfbf;
+            color: black;
         }
     }
 }
@@ -238,7 +239,8 @@ h4{
         box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.378);
     }
     a:hover{
-        color:#c3bfbf;
+        background-color: #c3bfbf;
+        color: black;
     }
 }
 
@@ -287,7 +289,8 @@ h4{
                 box-shadow: -10px 0px 35px 12px rgba(0,0,0,0.66);
             }
             a:hover{
-                color:  #c3bfbf;
+                background-color: #c3bfbf;
+                color: black;
             }
         }
         .nosotrosImagen{
@@ -346,6 +349,7 @@ h4{
 
 .footer{
     display: flex;
+    padding-top: 20px;
     justify-content: space-evenly;
     align-items: center;
     background-color: black;
@@ -383,36 +387,46 @@ h4{
     }
 }
 
+/*Media Querie para Seccion Footer del index.html pantallas inferiores a 768px*/
 @media (max-width: 768px) {
-    .footer{
+    .footer {
         display: flex;
-        padding-top:50px;
-        gap: 20px;
         flex-direction: column;
-        justify-content: space-evenly;
         align-items: center;
-        .logo{
-            width: 100px;
-                }
-            
-            ul{
-                list-style: none;
-                
-                a{
-                    font-size: 1.5em;
-                }
-                
-                .fa-instagram, .fa-facebook{
-                    font-size: 2em;
-                }
+        gap: 20px;
+        padding: 30px 20px;
+        text-align: center;
 
-    }  
-    p{
-        font-size: 1.2em;
-   } 
+        .logo {
+            width: 80px; /* Tamaño reducido para adaptarse a pantallas pequeñas */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            a {
+                font-size: 1.2em;
+                text-decoration: none;
+                color: #ffffff;
+                transition: color 0.3s;
+            }
+
+            .fa-instagram, .fa-facebook {
+                font-size: 2em;
+                margin: 5px 10px;
+            }
+        }
+
+        p {
+            font-size: 1em;
+            margin-top: 20px;
+        }
     }
 }
-
 /*Pagína Articulos*/
 
 .principalArticulos{
@@ -554,52 +568,139 @@ margin-bottom: 40px;
 
 
 /*Página Contacto*/
-
-.principalContacto{
+.principalContacto {
     display: flex;
-    gap:40px;
+    flex-direction: column;
+
+    gap: 20px;
     padding: 20px;
     background-image: url("../assets/img/fondo_contacto.jpg");
     background-color: rgb(72, 72, 72);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
     height: auto;
-    .h1Subtitulo{
-        font-size: 2rem;
-        color: #ffffff;   
-        text-shadow: black 0.1em 0.1em 0.2em ;
-        }
-}   
-.formularioContactoYMapa{
+    text-align: left; 
+}
+
+.principalContacto h1 {
+    color: #ffffff;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.h1Subtitulo {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    margin-top: 5px;
+}
+
+.formularioContactoYMapa {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
     padding: 30px;
     background-color: rgb(0, 0, 0);
     color: white;
-    padding: 20px;
-    p{
-        font-size: 1.5em;
-    }
-    label{
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    p {
         font-size: 1.2em;
+        margin-bottom: 10px;
     }
+    label {
+        font-size: 1em;
+        font-weight: bold;
+        color: #ffffff;
+        width: 100%;
+    }
+    input{
+        width: 100%;
+    }
+
 
 }
 
-/*Media Querie para Seccion Contacto del index.html pantallas inferiores a 768px*/
-@media screen and (max-width: 768px) {
-    .principalContacto{
+/*Estilos para la página Contacto tanto para el formulario como para el mapa*/
+.formularioContactoYMapa {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #222222;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    form {
         display: flex;
         flex-direction: column;
-    }
-    .formularioContactoYMapa{
-        display: flex;
-        flex-direction: column;
-        gap: 2em;
-        iframe{
-            width: 100%;
+        gap: 15px;
+        button{
+            display:inline-block;
+            color: #ffffff;
+            background-color: black;
+            font-size: 1em;
+            border:2px solid #ffffff;
+            padding:10px;
+            border-radius:5px;
+            box-shadow: -10px 0px 35px 12px rgba(0,0,0,0.66);
+        }
+        button:hover{
+            background-color: #c3bfbf;
+            color: black;
         }
     }
+    iframe {
+        border: none;
+        width: 100%;
+
+        border-radius: 8px;
+    }
 }
+
+/*Media Querie para Seccion Contacto de la página contacto.html pantallas inferiores a 768px*/
+@media (max-width: 768px) {
+    .formularioContactoYMapa {
+        flex-direction: column;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .formularioContactoYMapa form,
+    .formularioContactoYMapa iframe {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+
+
+/*Página Carrito*/
+.principalCarrito {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    padding: 20px;
+    background-image: url("../assets/img/fondo-carrito.jpg");
+    background-color: rgb(72, 72, 72);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    text-align: left; 
+}
+
+.principalContacto h1 {
+    color: #ffffff;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.h1Subtitulo {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    margin-top: 5px;
+}
+
