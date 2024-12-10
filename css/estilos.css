@@ -479,6 +479,7 @@ h4{
     padding: 50px;
     text-align: center;
 }
+
 .galeriaArticulos {
     padding:20px;
     margin:0 auto;
@@ -519,7 +520,7 @@ h4{
             color: white;
             font-size: 1.5em;
             }
-        a:hover{
+            a:hover{
             color: bisque;
             font-size: 1.7em;
         }
@@ -571,7 +572,6 @@ margin-bottom: 40px;
 .principalContacto {
     display: flex;
     flex-direction: column;
-
     gap: 20px;
     padding: 20px;
     background-image: url("../assets/img/fondo_contacto.jpg");
@@ -595,47 +595,19 @@ margin-bottom: 40px;
     margin-top: 5px;
 }
 
-.formularioContactoYMapa {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 30px;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    p {
-        font-size: 1.2em;
-        margin-bottom: 10px;
-    }
-    label {
-        font-size: 1em;
-        font-weight: bold;
-        color: #ffffff;
-        width: 100%;
-    }
-    input{
-        width: 100%;
-    }
 
+.col-lg-6{
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    
 
-}
-
-/*Estilos para la página Contacto tanto para el formulario como para el mapa*/
-.formularioContactoYMapa {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #222222;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    form {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+    .botones{
+       display: flex;
+       justify-content: space-evenly;
+        gap: 30px;
         button{
             display:inline-block;
             color: #ffffff;
@@ -651,29 +623,8 @@ margin-bottom: 40px;
             color: black;
         }
     }
-    iframe {
-        border: none;
-        width: 100%;
 
-        border-radius: 8px;
-    }
 }
-
-/*Media Querie para Seccion Contacto de la página contacto.html pantallas inferiores a 768px*/
-@media (max-width: 768px) {
-    .formularioContactoYMapa {
-        flex-direction: column;
-        justify-content: center;
-        gap: 80px;
-    }
-
-    .formularioContactoYMapa form,
-    .formularioContactoYMapa iframe {
-        width: 100%;
-        max-width: none;
-    }
-}
-
 
 
 /*Página Carrito*/
@@ -704,3 +655,9 @@ margin-bottom: 40px;
     margin-top: 5px;
 }
 
+.swal2-dark {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
