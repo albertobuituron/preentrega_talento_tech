@@ -1,0 +1,50 @@
+// Evita el envío del formulario directamente
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault(); 
+
+    // Validar campos
+    const nombre = document.getElementById('nombre').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const comentario = document.getElementById('comentario').value.trim();
+
+    if (!nombre || !email || !comentario) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Por favor, completa todos los campos.',
+            confirmButtonColor: '#ff0000', // Botón de confirmación rojo
+            cancelButtonColor: '#444444', // Botón de cancelación gris oscuro
+            background: '#333333',        // Fondo de la alerta
+            color: '#ffffff',             // Color del texto
+            });
+        return;
+    }
+
+    // Validar el formato de correo electronico
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Error en campo Correo Electronico',
+            text: 'Por favor, ingresa un correo electrónico válido.',
+            confirmButtonColor: '#ff0000', // Botón de confirmación rojo
+            cancelButtonColor: '#444444', // Botón de cancelación gris oscuro
+            background: '#333333',        // Fondo de la alerta
+            color: '#ffffff',             // Color del texto
+
+
+        });
+        return;
+    }
+
+    // Mensaje de verificación si están todos los campos correctos 
+    Swal.fire({
+        icon: 'success',
+        title: '¡MensajeEnviado!',
+        text: 'Tu consulta fue enviada correctamente.',
+    }).then(() => {
+        document.getElementById('contactForm').submit(); // Envía el formulario
+    });
+});
+
+

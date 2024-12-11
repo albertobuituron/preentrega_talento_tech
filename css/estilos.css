@@ -37,6 +37,7 @@ h4{
     text-shadow: black 0.1em 0.1em 0.2em ;
 }
 
+
 /*Seccion Body del index.html*/
 
 /*Header del index.html donde se aplican estilos para el logo y el menu de navegarion principal*/
@@ -135,6 +136,7 @@ h4{
 
 /*Media Querie para Seccion Main Principal del index.html pantallas inferiores a 768px*/
 @media (max-width: 768px) {
+
     .header{
         .logo{
             width: 100px;
@@ -163,7 +165,10 @@ h4{
             
             }
         }   
+
     }
+
+
     .principalIndex {
         flex-direction: column;
         gap: 20px; 
@@ -194,6 +199,8 @@ h4{
 
 
 /*Seccion productos Destacados del index.html*/
+
+
 .productosDestacados{
     background-color: gray;
     margin-top: 15px;
@@ -429,6 +436,30 @@ h4{
 }
 /*Pagína Articulos*/
 
+
+
+.card {
+    margin-bottom: 30px;
+    max-width: 300px; /* Limita el ancho máximo de las cards */
+}
+
+.card img {
+    height: 500px; /* Ajusta la altura de las imágenes */
+    object-fit: cover; /* Asegura que las imágenes se ajusten bien al espacio */
+}
+
+.card-title {
+    font-size: 1rem; /* Reduce el tamaño del título */
+}
+
+.card-price {
+    font-size: 0.9rem; /* Reduce el tamaño del texto del precio */
+}
+
+
+
+
+
 .principalArticulos{
     display: flex;
     justify-content: space-evenly;
@@ -564,6 +595,30 @@ margin-bottom: 40px;
     }
 
 
+        .table-responsive {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch; /* Mejora la experiencia de scroll en dispositivos táctiles */
+        }
+    
+        table {
+            width: 100%; /* Asegúrate de que la tabla ocupe todo el ancho disponible */
+            font-size: 14px; /* Opcional: Reducir el tamaño de fuente para pantallas pequeñas */
+        }
+    
+        th, td {
+            white-space: nowrap; /* Evitar saltos de línea en celdas */
+        }
+        .btn {
+            padding: 5px 10px;
+            font-size: 12px; /* Reducir el tamaño del texto en los botones */
+        }
+    
+        input[type="number"] {
+            width: 50px; /* Reducir el ancho de los campos de entrada numérica */
+        }
+
+
+        
 }
 
 
@@ -597,12 +652,14 @@ margin-bottom: 40px;
 
 
 .col-lg-6{
+    padding: 100px;
     font-size: 1em;
     font-weight: bold;
     color: #ffffff;
     font-size: 1.2em;
     margin-bottom: 10px;
     
+   
 
     .botones{
        display: flex;
@@ -624,6 +681,10 @@ margin-bottom: 40px;
         }
     }
 
+}
+
+.container-fluid{
+    background-color: rgb(0, 0, 0);
 }
 
 
