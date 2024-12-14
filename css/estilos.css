@@ -38,45 +38,34 @@ h4{
 }
 
 
-/*Seccion Body del index.html*/
+/*Ajustes personalizados del header y de la barra de navegación por fuera de Bootstrap*/
 
-/*Header del index.html donde se aplican estilos para el logo y el menu de navegarion principal*/
-.header{
-    display: flex;
-    justify-content:space-between;
-    align-items:center;
-    padding: 0 20px 0 20px;
-    height: 10vh;
-    background-color: rgb(0, 0, 0);
-    font-size: 1 rem;
-    position:sticky;
-    top:0;
-    z-index:100;
-    /*Atributos de la Imagen del Logo principal*/
-    .logo{
-        width: 200px;
-    }
-    /*Atributos de los links de la navegación principal*/   
-    nav{
-        ul{
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-            li{
-                a{
-                    text-decoration: none;
-                    color:  #ffffff;
-                    font-size: 1.5rem;
-                
-                }
-                a:hover{
-                    color:  #c3bfbf;
-                }
-            }
-        
-        }
-    }
+.header {
+    background-color: #000;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #c3bfbf; 
+}
+
+/* Ocultar el borde del botón hamburguesa */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 10px;
 }
 
 /*Seccion Main del index.html*/
@@ -434,26 +423,26 @@ h4{
         }
     }
 }
-/*Pagína Articulos*/
 
 
+/*Pagína productos*/
 
 .card {
     margin-bottom: 30px;
-    max-width: 300px; /* Limita el ancho máximo de las cards */
+    max-width: 300px; 
 }
 
 .card img {
-    height: 500px; /* Ajusta la altura de las imágenes */
-    object-fit: cover; /* Asegura que las imágenes se ajusten bien al espacio */
+    height: 500px; 
+    object-fit: cover;
 }
 
 .card-title {
-    font-size: 1rem; /* Reduce el tamaño del título */
+    font-size: 1rem;
 }
 
 .card-price {
-    font-size: 0.9rem; /* Reduce el tamaño del texto del precio */
+    font-size: 0.9rem; 
 }
 
 
@@ -597,24 +586,24 @@ margin-bottom: 40px;
 
         .table-responsive {
             overflow-x: auto;
-            -webkit-overflow-scrolling: touch; /* Mejora la experiencia de scroll en dispositivos táctiles */
+            -webkit-overflow-scrolling: touch; /
         }
     
         table {
-            width: 100%; /* Asegúrate de que la tabla ocupe todo el ancho disponible */
-            font-size: 14px; /* Opcional: Reducir el tamaño de fuente para pantallas pequeñas */
+            width: 100%; 
+            font-size: 14px; 
         }
     
         th, td {
-            white-space: nowrap; /* Evitar saltos de línea en celdas */
+            white-space: nowrap; 
         }
         .btn {
             padding: 5px 10px;
-            font-size: 12px; /* Reducir el tamaño del texto en los botones */
+            font-size: 12px; 
         }
     
         input[type="number"] {
-            width: 50px; /* Reducir el ancho de los campos de entrada numérica */
+            width: 50px; 
         }
 
 
@@ -689,6 +678,7 @@ margin-bottom: 40px;
 
 
 /*Página Carrito*/
+
 .principalCarrito {
     display: flex;
     flex-direction: column;

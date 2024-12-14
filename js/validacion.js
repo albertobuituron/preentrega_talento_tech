@@ -2,7 +2,7 @@
 document.getElementById('contactForm').addEventListener('submit', function (e) {
     e.preventDefault(); 
 
-    // Validar campos
+    // Validar campos del formulario de contacto
     const nombre = document.getElementById('nombre').value.trim();
     const email = document.getElementById('email').value.trim();
     const comentario = document.getElementById('comentario').value.trim();
@@ -12,10 +12,10 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
             icon: 'error',
             title: 'Error',
             text: 'Por favor, completa todos los campos.',
-            confirmButtonColor: '#ff0000', // Botón de confirmación rojo
-            cancelButtonColor: '#444444', // Botón de cancelación gris oscuro
-            background: '#333333',        // Fondo de la alerta
-            color: '#ffffff',             // Color del texto
+            confirmButtonColor: '#ff0000',
+            cancelButtonColor: '#444444',
+            background: '#333333',
+            color: '#ffffff',
             });
         return;
     }
@@ -27,10 +27,10 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
             icon: 'error',
             title: 'Error en campo Correo Electronico',
             text: 'Por favor, ingresa un correo electrónico válido.',
-            confirmButtonColor: '#ff0000', // Botón de confirmación rojo
-            cancelButtonColor: '#444444', // Botón de cancelación gris oscuro
-            background: '#333333',        // Fondo de la alerta
-            color: '#ffffff',             // Color del texto
+            confirmButtonColor: '#ff0000', 
+            cancelButtonColor: '#444444',
+            background: '#333333',
+            color: '#ffffff',
 
 
         });
