@@ -40,8 +40,15 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     // Mensaje de verificación si están todos los campos correctos 
     Swal.fire({
         icon: 'success',
-        title: '¡MensajeEnviado!',
+        title: '¡Mensaje Enviado!',
         text: 'Tu consulta fue enviada correctamente.',
+        confirmButtonColor: '#ff0000', 
+        cancelButtonColor: '#444444',
+        background: '#333333',
+        color: '#ffffff',
+
+
+
     }).then(() => {
         document.getElementById('contactForm').submit(); // Envía el formulario
     });
