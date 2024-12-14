@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/44a18da8-a3d7-4f21-8b83-1da5181f17a7)
 # **Proyecto Integrador Talento Tech / Front End-JS** 
 
 
@@ -163,6 +162,6 @@ También se implementó la consulta a una API de conversión de monedas para apl
 <img src="./assets/img/linkedin.svg" alt=linkedin style="margin-bottom: 5px;width:40px;" />
 </a>
 <a href="https:/github.com/albertobuituron" target="_blank">
-<img src="../assets/img/github.svg" alt=github style="margin-bottom: 5px;width:40px;" />
+<img src="./assets/img/github.svg" alt=github style="margin-bottom: 5px;width:40px;" />
 </a>
 </div>
