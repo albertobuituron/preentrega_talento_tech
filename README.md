@@ -76,7 +76,8 @@ También se implementó la consulta a una API de conversión de monedas para apl
 
 ### productos.html
 
-#### Pagina en la que se muestra la galería de imágenes de los artículos disponibles para poder seleccionar y agregar al carrito
+#### Pagina en la que se muestra la galería de imágenes de los artículos disponibles para poder seleccionar y agregar al carrito.
+#### Se implementó la consulta a una API de conversion de monedas para poder mostrar el precio en $ Argentinos y USD Estadounidenses y que de esta forma se encuentre siempre actualizado en base a la información obtenida de la API.
 
 
 ![image](https://github.com/user-attachments/assets/21d99d9a-c188-40a8-858c-9532d0db70bf)
