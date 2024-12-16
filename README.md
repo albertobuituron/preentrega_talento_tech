@@ -162,7 +162,7 @@ También se implementó la consulta a una API de conversión de monedas para apl
 <a href="https://www.linkedin.com/in/alberto-buituron/" target="_blank">
 <img src="./assets/img/linkedin.svg" alt=linkedin style="margin-bottom: 5px;width:40px;" />
 </a>
-<a href="https:/github.com/albertobuituron" target="_blank">
+<a href="/albertobuituron" target="_blank">
 <img src="./assets/img/github.svg" alt=github style="margin-bottom: 5px;width:40px;" />
 </a>
 </div>
